@@ -1,0 +1,20 @@
+<div class="p-6 max-w-4xl grid grid-cols-10  bg-white shadow-md rounded-md">
+
+
+  <div class="col-span-10" >
+    <h1 class="text-2xl font-bold mb-4 text-gray-800">Liste des Produits</h1>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      @for (product of products; track $index) {
+        <app-card-item [product]="product" ></app-card-item>
+      }
+
+    </div>
+
+  </div>
+   <!-- <div class="col-span-3"> -->
+    <app-panier></app-panier>
+   <!-- </div> -->
+  </div>
+  
